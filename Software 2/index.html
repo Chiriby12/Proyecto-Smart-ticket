@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>My First Json</title>
+    </head>
+    <body>
+        <script> type="text/javascript"
+        let contacts = `{
+                        "contacts": [
+                            {
+                                "name":"Sebastian",
+                                "age":20,
+                                "isActive":true,
+                                "adress":"Calle24",
+                                "Phone":[
+                                    {"Personal":"3218016933"},
+                                    {"Work":"1234567890"}
+                                ],
+                                "dogs":[],
+                                "spouse":null
+                            },
+                            {
+                                "name":"Quentin Tarantino",
+                                "age":55,
+                                "isActive":false,
+                                "adress":"20 Queen ST",
+                                "Phone":[
+                                    {"Personal":"1234567890"},
+                                    {"Work":"1234567890"}
+                                ],
+                                "dogs":["Ash","Tony"],
+                                "spouse":"Daniela"
+                            }
+                        ]
+                    }`;
+                    console.log(JSON.parse(contacts));
+                    let = parsedContacts =JSON.parse(contacts);
+                    console.log(parsedContacts.contacts[0].name);
+
+
+        </script>
+    </body>
+</html>

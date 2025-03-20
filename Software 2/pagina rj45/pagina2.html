@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo ponchar un cable RJ45</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cómo ponchar un cable RJ45</h1>
+        <p>El ponchado de un cable RJ45 es el proceso de conectar los cables de red en un conector RJ45 para permitir la comunicación de datos. Existen diferentes configuraciones según el tipo de red que se quiera establecer.</p>
+        
+        <h2>Materiales necesarios</h2>
+        <ul>
+            <li>Cable UTP (categoría 5e, 6, etc.)</li>
+            <li>Conectores RJ45</li>
+            <li>Crimpadora</li>
+            <li>Probador de cable (opcional)</li>
+        </ul>
+        
+        <h2>Tipos de cableado</h2>
+        <p>Existen dos estándares principales de cableado: T568A y T568B. Dependiendo de cómo se combinen, se pueden obtener distintos tipos de conexión:</p>
+        
+        <table>
+            <tr>
+                <th>Tipo de conexión</th>
+                <th>Configuración</th>
+                <th>Uso común</th>
+            </tr>
+            <tr>
+                <td><b>B-B</b></td>
+                <td>Ambos extremos con el estándar T568B</td>
+                <td>Conexión de red directa (PC a switch o router)</td>
+            </tr>
+            <tr>
+                <td><b>A-A</b></td>
+                <td>Ambos extremos con el estándar T568A</td>
+                <td>Conexión de red directa</td>
+            </tr>
+            <tr>
+                <td><b>A-B</b></td>
+                <td>Un extremo con T568A y el otro con T568B</td>
+                <td>Cable cruzado (usado antiguamente para conectar dos PCs sin switch)</td>
+            </tr>
+        </table>
+        
+        <h2>Orden de colores</h2>
+        <p>A continuación, se muestra el orden de colores de los estándares:</p>
+        <table>
+            <tr>
+                <th>Pin</th>
+                <th>T568A</th>
+                <th>T568B</th>
+            </tr>
+            <tr><td>1</td><td>Blanco/Verde</td><td>Blanco/Naranja</td></tr>
+            <tr><td>2</td><td>Verde</td><td>Naranja</td></tr>
+            <tr><td>3</td><td>Blanco/Naranja</td><td>Blanco/Verde</td></tr>
+            <tr><td>4</td><td>Azul</td><td>Azul</td></tr>
+            <tr><td>5</td><td>Blanco/Azul</td><td>Blanco/Azul</td></tr>
+            <tr><td>6</td><td>Naranja</td><td>Verde</td></tr>
+            <tr><td>7</td><td>Blanco/Marrón</td><td>Blanco/Marrón</td></tr>
+            <tr><td>8</td><td>Marrón</td><td>Marrón</td></tr>
+        </table>
+        
+        <h2>Pasos para ponchar un cable RJ45</h2>
+        <ol>
+            <li>Pelar aproximadamente 2 cm del recubrimiento del cable UTP.</li>
+            <li>Ordenar los hilos según el estándar deseado (T568A o T568B).</li>
+            <li>Recortar los hilos a la misma longitud.</li>
+            <li>Insertar los hilos en el conector RJ45 asegurándose de que cada hilo entre completamente.</li>
+            <li>Usar la crimpadora para fijar los hilos en el conector.</li>
+            <li>Probar la conexión con un tester de cables para verificar que el ponchado fue exitoso.</li>
+        </ol>
+        
+        <h2>Conexión a un switch y un Access Point D-Link</h2>
+        <p>Para garantizar una conexión estable y segura, se conectó el cable RJ45 ponchado a un switch y un Access Point D-Link de la siguiente manera:</p>
+        <ul>
+            <li>El cable se conectó desde el router principal al switch usando un cable B-B (T568B en ambos extremos).</li>
+            <li>Desde el switch, se llevó otro cable B-B hacia el Access Point D-Link.</li>
+            <li>Se configuró la seguridad de la red inalámbrica en el AP para utilizar WPA2-PSK con una clave segura.</li>
+        </ul>
+        
+        <h2>Pruebas de seguridad y velocidad</h2>
+        <p>Para asegurar una conexión estable y rápida, se realizaron pruebas con las siguientes herramientas:</p>
+        <ul>
+            <li><b>WiFi Acrylic:</b> Se utilizó para analizar la intensidad de la señal WiFi y detectar posibles interferencias.</li>
+            <li><b>iPerf:</b> Se realizó una prueba de velocidad de la conexión de red midiendo el ancho de banda disponible entre dispositivos conectados.</li>
+        </ul>
+        <p>Los resultados mostraron una conexión estable y segura, con una velocidad adecuada para la transferencia de datos y un nivel de interferencias mínimo.</p>
+        
+        <h2>Demostración en Video</h2>
+        <p>A continuación, se muestran videos explicativos sobre el proceso de ponchado y conexión:</p>
+        
+        <video width="600" controls>
+            <source src="video1.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+        
+        <video width="600" controls>
+            <source src="video2.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+        
+        <video width="600" controls>
+            <source src="video3.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+    </div>
+</body>
+</html>
