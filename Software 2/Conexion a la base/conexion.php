@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "leon123";
-$dbname = "smartiticket";
+$dbname = "smart";
 
 // la conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
